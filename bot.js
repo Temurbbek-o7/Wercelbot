@@ -1,25 +1,9 @@
-// const { Telegraf } = require("telegraf");
-
-// const bot = new Telegraf("");
-
-// bot.start((ctx) => ctx.reply("Assalomu alaykum! " + ctx.from.first_name));
-// bot.help((ctx) => ctx.reply("Biror biror gap yuboring"));
-// bot.on("text", (ctx) => ctx.reply(ctx.message.text));
-
-// module.exports = bot;
-
-
-
-
 const { Telegraf } = require("telegraf");
 const fs = require("fs");
 
 const bot = new Telegraf("8260423420:AAFBxWfOK062QaXmSqTYKa5GboUKdTTH_Rk");
 
-
 const names = JSON.parse(fs.readFileSync("names_real.json" , "utf-8"));
-
-
 bot.start((ctx) =>
   ctx.reply(
     "Assalomu alaykum! 😊\nIsm ma’nosini biluvchi botga xush kelibsiz.\n\nIsm yuboring — men sizga uning ma’nosini aytaman."
